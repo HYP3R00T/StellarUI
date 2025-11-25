@@ -1,38 +1,87 @@
-> 📖 **New to this template?** Check out the [comprehensive setup guide](http://hyperoot.dev/python-template/setup) for detailed instructions on getting started.
+# StellarUI
 
----
+A UI component library for Astro with beautiful, accessible components.
 
-# Project Name
+## Project Structure
 
-Brief description of what your project does.
+This is a pnpm monorepo with the following structure:
 
-## Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Installation
-
-```bash
-# Clone your repository
-git clone https://github.com/YOUR_USERNAME/YOUR_PROJECT_NAME.git
-cd YOUR_PROJECT_NAME
-
-# Install dependencies
-pnpm install
+```
+StellarUI/
+├── packages/
+│   └── stellarui/          # Main component library package
+│       ├── components/     # .astro components
+│       ├── index.ts        # Main export file
+│       └── package.json
+├── apps/
+│   └── docs/              # Documentation and demo site
+└── package.json           # Root workspace configuration
 ```
 
-## Contributing
+## Getting Started
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'feat: add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+### Prerequisites
 
-Please follow the coding standards defined in `.github/copilot-instructions.md`.
+- Node.js 18+
+- pnpm 9+
+
+### Installation
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start the development server
+pnpm dev
+```
+
+The docs site will be available at `http://localhost:4321`.
+
+## Development
+
+### Available Scripts
+
+- `pnpm dev` - Start the docs development server
+- `pnpm build` - Build all packages
+- `pnpm build:lib` - Build only the component library
+- `pnpm build:docs` - Build only the docs site
+- `pnpm preview` - Preview the built docs site
+- `pnpm format` - Format code with Prettier
+- `pnpm format:check` - Check code formatting
+- `pnpm typecheck` - Run TypeScript type checking
+
+### Adding New Components
+
+1. Create a new `.astro` file in `packages/stellarui/components/`
+2. Export it from `packages/stellarui/index.ts`
+3. Add examples in `apps/docs/src/pages/index.astro`
+
+Example component structure:
+
+```astro
+---
+export interface Props {
+  // Component props
+}
+
+const { prop1, prop2 } = Astro.props;
+---
+
+<div>
+  <!-- Component markup -->
+  <slot />
+</div>
+```
+
+## Publishing
+
+To publish the `stellarui` package to npm:
+
+```bash
+cd packages/stellarui
+pnpm publish
+```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT

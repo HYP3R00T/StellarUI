@@ -1,0 +1,23 @@
+{
+    "name": "@stellarui/root",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "pnpm --filter docs dev --host 0.0.0.0",
+        "build": "pnpm --recursive build",
+        "build:lib": "pnpm --filter stellarui build",
+        "build:docs": "pnpm --filter docs build",
+        "preview": "pnpm --filter docs preview",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "pnpm --recursive typecheck"
+    },
+    "devDependencies": {
+        "eslint": "^9.39.1",
+        "prettier": "^3.6.2",
+        "prettier-plugin-astro": "^0.14.1",
+        "prettier-plugin-tailwindcss": "^0.7.1",
+        "typescript": "^5.9.3"
+    }
+}
