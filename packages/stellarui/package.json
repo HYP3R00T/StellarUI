@@ -1,0 +1,32 @@
+{
+    "name": "stellarui",
+    "version": "0.1.0",
+    "description": "Astro UI component library",
+    "type": "module",
+    "exports": {
+        ".": "./index.ts",
+        "./*": "./*"
+    },
+    "files": [
+        "components",
+        "index.ts"
+    ],
+    "keywords": [
+        "astro",
+        "astro-component",
+        "ui",
+        "components"
+    ],
+    "author": "",
+    "license": "MIT",
+    "scripts": {
+        "typecheck": "tsc --noEmit"
+    },
+    "peerDependencies": {
+        "astro": "^5.0.0"
+    },
+    "devDependencies": {
+        "astro": "^5.0.5",
+        "typescript": "^5.9.3"
+    }
+}

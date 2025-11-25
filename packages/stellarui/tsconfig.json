@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "astro/tsconfigs/strict",
+        "../../tsconfig.build.json"
+    ],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": ".",
+        "baseUrl": ".",
+        "emitDeclarationOnly": true,
+        "paths": {
+            "@/*": [
+                "./*"
+            ],
+            "@components/*": [
+                "./components/*"
+            ]
+        },
+        "types": [
+            "astro/client"
+        ]
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.astro",
+        "index.ts",
+        "env.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
