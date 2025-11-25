@@ -1,0 +1,32 @@
+---
+import { Button, Card } from 'stellarui';
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="StellarUI Component Library" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>StellarUI - Component Library</title>
+  </head>
+  <body class="bg-background min-h-screen p-8">
+    <div class="mx-auto max-w-6xl">
+      <div class="space-y-12">
+        <section>
+          <div>
+            <h3 class="text-text-subtle mb-4 text-lg font-semibold">Variants</h3>
+            <div class="flex flex-wrap gap-4">
+              <Button variant="primary">Primary Button</Button>
+              <Button variant="secondary">Secondary Button</Button>
+              <Button variant="outline">Outline Button</Button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

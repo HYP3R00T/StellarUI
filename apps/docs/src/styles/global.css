@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        /* Neutrals */
+        --background: hsl(220, 15%, 8%);
+        --content: hsl(220, 14%, 11%);
+        --elevated: hsl(220, 13%, 16%);
+        --border: hsl(220, 12%, 22%);
+        --text-default: hsl(220, 13%, 93%);
+        --text-subtle: hsl(220, 9%, 70%);
+        --text-faint: hsl(220, 8%, 50%);
+
+        /* Accents & Statuses */
+        --red: hsl(0, 65%, 62%);
+        --orange: hsl(30, 70%, 60%);
+        --yellow: hsl(45, 75%, 65%);
+        --green: hsl(130, 40%, 55%);
+        --teal: hsl(165, 45%, 53%);
+        --cyan: hsl(185, 50%, 60%);
+        --blue: hsl(210, 70%, 63%);
+        --purple: hsl(270, 60%, 65%);
+        --pink: hsl(330, 65%, 67%);
+
+        --accent: var(--blue);
+        --radius: 0.5rem;
+
+        --astro-code-background: var(--content);
+        --astro-code-foreground: var(--text-default);
+        --astro-code-token-constant: var(--pink);
+        --astro-code-token-string: var(--green);
+        --astro-code-token-comment: var(--text-faint);
+        --astro-code-token-keyword: var(--pink);
+        --astro-code-token-parameter: var(--red);
+        --astro-code-token-function: var(--blue);
+        --astro-code-token-string-expression: var(--green);
+        --astro-code-token-punctuation: var(--red);
+        --astro-code-token-link: var(--green);
+    }
+}
+
+@theme {
+    --color-*: initial;
+    --color-background: var(--background);
+    --color-content: var(--content);
+    --color-elevated: var(--elevated);
+    --color-border: var(--border);
+    --color-text-default: var(--text-default);
+    --color-text-subtle: var(--text-subtle);
+    --color-text-faint: var(--text-faint);
+    --color-red: var(--red);
+    --color-orange: var(--orange);
+    --color-yellow: var(--yellow);
+    --color-green: var(--green);
+    --color-cyan: var(--cyan);
+    --color-blue: var(--blue);
+    --color-purple: var(--purple);
+    --color-pink: var(--pink);
+    --color-accent: var(--accent);
+    --radius-radius: var(--radius);
+    --radius-lg: calc(var(--radius) + 3px);
+    --radius-sm: calc(var(--radius) - 3px);
+}

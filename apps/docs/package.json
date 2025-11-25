@@ -1,0 +1,22 @@
+{
+    "name": "docs",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "typecheck": "astro check"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.17",
+        "stellarui": "workspace:*",
+        "tailwindcss": "^4.1.17"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.5",
+        "astro": "^5.16.0",
+        "typescript": "^5.9.3"
+    }
+}
