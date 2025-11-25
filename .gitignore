@@ -142,6 +142,3 @@ vite.config.ts.timestamp-*
 
 # pnpm
 .pnpm-store
-
-# astro
-.astro
