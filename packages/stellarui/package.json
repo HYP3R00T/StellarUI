@@ -1,11 +1,11 @@
 {
     "name": "stellarui",
     "version": "0.1.0",
-    "description": "Astro UI component library",
+    "description": "Beautiful Astro UI components with Tailwind CSS",
     "type": "module",
     "exports": {
         ".": "./index.ts",
-        "./*": "./*"
+        "./components/*": "./components/*"
     },
     "files": [
         "components",
@@ -14,19 +14,30 @@
     "keywords": [
         "astro",
         "astro-component",
+        "withastro",
         "ui",
-        "components"
+        "components",
+        "tailwindcss"
     ],
-    "author": "",
+    "homepage": "https://github.com/HYP3R00T/StellarUI#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HYP3R00T/StellarUI.git"
+    },
+    "author": "HYP3R00T",
     "license": "MIT",
     "scripts": {
         "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
-        "astro": "^5.0.0"
+        "astro": "^5.16.0"
     },
     "devDependencies": {
-        "astro": "^5.0.5",
+        "astro": "^5.16.0",
         "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.17",
+        "tailwindcss": "^4.1.17"
     }
 }
