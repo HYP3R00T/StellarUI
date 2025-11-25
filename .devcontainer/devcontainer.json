@@ -1,5 +1,5 @@
 {
-    "name": "devcontainer-astro-template",
+    "name": "StellarUI",
     "build": {
         "context": ".",
         "dockerfile": "Dockerfile"
