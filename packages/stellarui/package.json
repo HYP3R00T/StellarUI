@@ -31,10 +31,10 @@
         "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
-        "astro": "^5.16.0"
+        "astro": "^5.16.4"
     },
     "devDependencies": {
-        "astro": "^5.16.0",
+        "astro": "^5.16.4",
         "typescript": "^5.9.3"
     },
     "dependencies": {
