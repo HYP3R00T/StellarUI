@@ -10,13 +10,13 @@
         "typecheck": "astro check"
     },
     "dependencies": {
-        "@tailwindcss/vite": "^4.2.2",
+        "@tailwindcss/vite": "^4.2.4",
         "stellarui": "workspace:*",
-        "tailwindcss": "^4.2.2"
+        "tailwindcss": "^4.2.4"
     },
     "devDependencies": {
-        "@astrojs/check": "^0.9.8",
-        "astro": "^6.1.1",
-        "typescript": "^6.0.2"
+        "@astrojs/check": "^0.9.9",
+        "astro": "^6.2.1",
+        "typescript": "^6.0.3"
     }
 }
