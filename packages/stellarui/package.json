@@ -31,14 +31,14 @@
         "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
-        "astro": "^6.1.1"
+        "astro": "^6.4.8"
     },
     "devDependencies": {
-        "astro": "^6.1.1",
-        "typescript": "^6.0.2"
+        "astro": "^6.4.8",
+        "typescript": "^6.0.3"
     },
     "dependencies": {
-        "@tailwindcss/vite": "^4.2.2",
-        "tailwindcss": "^4.2.2"
+        "@tailwindcss/vite": "^4.3.1",
+        "tailwindcss": "^4.3.1"
     }
 }
