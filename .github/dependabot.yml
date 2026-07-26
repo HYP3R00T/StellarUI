@@ -1,10 +1,27 @@
 version: 2
 updates:
-  - package-ecosystem: npm
-    directory: '/'
-    schedule:
-      interval: weekly
-    groups:
-      dependencies:
-        patterns:
-          - '*'
+- package-ecosystem: npm
+  directory: /
+  schedule:
+    interval: weekly
+    time: 09:00
+    timezone: Asia/Kolkata
+    day: wednesday
+  groups:
+    safe-patch-updates:
+      patterns:
+      - '*'
+      update-types:
+      - patch
+    minor-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+  open-pull-requests-limit: 2
+  cooldown:
+    default-days: 7
+  ignore:
+  - dependency-name: '*'
+    update-types:
+    - version-update:semver-major
